@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: #eaebec;
+  color: #fff;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  background-color: #3a4655;
+  height: 500px;
+  width: 400px;
+  padding: 5px;
+  text-align: center;
+  border: solid 1px #3a4655;
+  box-shadow: 0 8px 50px -7px black;
+}
+.h3 {
+  color: #727b86;
+  font-family: serif;
+  padding-top: 5px;
+}
+.diplay {
+  height: 50px;
+  width: 100%;
+  background-color: #3a4655;
+  border: none;
+  font-size: 25px;
+  text-align: right;
+  color: #727b86;
+  border-bottom: dotted 1px;
+}
+
+.button {
+  float: left;
+  width: 25%;
+  background: #425062;
+  color: #fff;
+  padding: 20px;
+  font-size: 25px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  border: 2px solid #3c4857;
+  transition: all 0.2s ease-in-out;
+}
+.button:hover {
+  background: #e0b612;
+}
+#btnc {
+  color: #d95d4e;
+}
+
+.area {
+  resize: none;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 6px;
+  width: 100%;
+  height: 200px;
+  font-family: Inconsolata;
+  font-size: 20px;
+  user-select: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.4);
+  z-index: 10;
+  color: rgba(255, 255, 255, 1);
+  caret-color: black;
+  transition: color 0.7s;
+  padding: 0px;
+}
+
+.input-symbol-euro {
+  position: relative;
+}
+
+.input-symbol-euro:after {
+  position: absolute;
+  top: 0;
+  content: '$';
+  left: 5px;
+}
