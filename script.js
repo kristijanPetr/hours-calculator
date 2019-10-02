@@ -44,6 +44,7 @@ $('.area').on('change keyup paste', function(evt) {
   let value = evt.target.value;
   var total = calculateArr(value.split('\n'));
   var rate = $('.rate').val();
+  rate = !isNaN(rate) ? rate : 0;
   var a = total.split(':'); // split it at the colons
 
   // minutes are worth 60 seconds. Hours are worth 60 minutes.
